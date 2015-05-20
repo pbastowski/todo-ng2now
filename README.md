@@ -254,4 +254,7 @@ So, Angular2-now wins this one, again.
 </template> 
 ```
 
-In summary, you can write nice short code if you use the [Angular2-now](https://github.com/pbastowski/angular2-now) library with your [angular-meteor](http://angular-meteor.com/) projects.
+## Summary
+
+From the above short examples, it would appear that you can write nice, short code if you use the [Angular2-now](https://github.com/pbastowski/angular2-now) library with your [angular-meteor](http://angular-meteor.com/) projects.
+
