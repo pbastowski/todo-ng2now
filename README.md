@@ -11,7 +11,7 @@ Well, let's see..
 
 ## The App itself
 
-### app.js
+#### app.js
 
 <table>
 <thead>
@@ -47,7 +47,7 @@ export class TodoApp {}
   </tr>
 </table>
 
-### app.html
+#### app.html
 ```html
 <div>  
     <todo-list></todo-list>
@@ -57,7 +57,7 @@ export class TodoApp {}
 
 ## todo-list
 
-### todo-list.js
+#### todo-list.js
 
 <table>
 <thead>
@@ -110,7 +110,7 @@ export class TodoList {
   </tr>
 </table>
 
-### todo-list.html
+#### todo-list.html
 
 ```html
 <div style="margin-bottom:10px">
@@ -122,7 +122,9 @@ export class TodoList {
 </div>
 ```
 
-### new-item.js
+## new-item
+
+#### new-item.js
 
 <table>
 <thead>
@@ -182,7 +184,7 @@ export class NewItem {
   </tr>
 </table>
 
-### new-item.html
+#### new-item.html
 
 ```html
 <form ng-submit="vm.addItem()" class="form-inline">
