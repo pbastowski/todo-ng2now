@@ -1,12 +1,12 @@
 # todo-ng2now
 
-ToDo app coded using the [Angular2-now](https://github.com/pbastowski/angular2-now) library and with [angular-meteor](http://angular-meteor.com/).
+ToDo app coded using the [Angular2-now](https://github.com/pbastowski/angular2-now) library and with AngularJS 1.3 and [angular-meteor](http://angular-meteor.com/).
 
 Click here for the [demo](http://todo-ng2now.meteor.com/).
 
 ## Comparing angular2-now and Aurelia
 
-After readin [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/2015/05/20/porting-an-angular-2-0-app-to-aurelia/) I was inspired to do a side by side comparison of **angular2-now** and **Aurelia**. I wanted to see just how much more code, if any, I would be forced to write with AngularJS 1.3, angular2-now and angular-meteor. 
+After reading [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/2015/05/20/porting-an-angular-2-0-app-to-aurelia/) I was inspired to do a side by side comparison of **angular2-now** and **Aurelia**. I wanted to see just how much more code, if any, I would be forced to write with AngularJS 1.3, angular2-now and angular-meteor. 
 
 *Notice:* For comparison, I have copied the Aurelia code samples from the abovementioned blog. 
 
@@ -256,5 +256,5 @@ So, Angular2-now wins this one, again.
 
 ## Summary
 
-From the above short examples, it would appear that you can write nice, short code if you use the [Angular2-now](https://github.com/pbastowski/angular2-now) library with your [angular-meteor](http://angular-meteor.com/) projects.
+From the above short examples, it would appear that you can write nice, short code with AngularJS 1.3 and [Angular2-now](https://github.com/pbastowski/angular2-now).
 
