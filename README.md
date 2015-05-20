@@ -6,7 +6,7 @@ Click here for the [demo](http://todo-ng2now.meteor.com/).
 
 ## Comparing angular2-now and Aurelia
 
-Having read [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/2015/05/20/porting-an-angular-2-0-app-to-aurelia/) had inspired me to do a side by side comparison of **angular2-now** and **Aurelia**. I wanted to see just how much more code I would be forced to write with AngularJS 1.3 and angular2-now. 
+Having read [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/2015/05/20/porting-an-angular-2-0-app-to-aurelia/) had inspired me to do a side by side comparison of **angular2-now** and **Aurelia**. I wanted to see just how much more code, if any, I would be forced to write with AngularJS 1.3, angular2-now and angular-meteor. 
 
 *Note:* For comparison, I have copied the Aurelia code samples from the abovementioned blog. 
 
