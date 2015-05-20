@@ -11,7 +11,7 @@ Well, let's see..
 
 ## The App itself
 
-Aurelia obviously wins here.
+Aurelia obviously wins here with much shorter code.
 
 #### app.js
 
@@ -49,14 +49,19 @@ export class TodoApp {}
   </tr>
 </table>
 
-#### angular2-now - app.html
+## app.html
+
+Angular2-now wins this round by a little bit.
+
+#### Angular2-now
 ```html
 <div>  
     <todo-list></todo-list>
     <new-item></new-item>
 </div>
 ```
-#### Aurelia - app.html
+
+#### Aurelia
 ```html
 <template>  
   <require from="./todo-list"></require>
@@ -122,7 +127,11 @@ export class TodoList {
   </tr>
 </table>
 
-#### angular2-now - todo-list.html
+## todo-list.html
+
+Both are about the same length here.
+
+#### Angular2-now
 
 ```html
 <div style="margin-bottom:10px">
@@ -134,11 +143,11 @@ export class TodoList {
 </div>
 ```
 
-### Aurelia - todolist.html
+### Aurelia
 ```html
 <template style="margin-bottom:10px">  
   <h1>To Do</h1>
-<div style="padding:5px" repeat.for="item of items">  
+  <div style="padding:5px" repeat.for="item of items">  
       <input type="checkbox" checked.bind="item.completed" />
       ${item.text} <a class="glyphicon glyphicon-remove" click.trigger="$parent.removeItem(item)"></a>
   </div>
@@ -146,7 +155,7 @@ export class TodoList {
 </template>  
 ```
 
-## new-item
+## New-Item
 
 #### new-item.js
 
