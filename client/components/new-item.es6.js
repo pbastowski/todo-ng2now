@@ -1,6 +1,5 @@
-@Component({ selector: 'new-item' })
+@Component({ selector: 'new-item', injectables: ['todoItems'] })
 @View({ templateUrl: 'client/components/new-item.html' })
-@Inject(['todoItems'])
 
 class NewItem {
 	constructor(todoItemList) {
