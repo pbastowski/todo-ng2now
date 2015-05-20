@@ -1,0 +1,11 @@
+.DS_Store
+.DS_Store?
+.Trashes
+
+.idea
+
+.meteor/local/bower
+.coverage
+node_modules
+packages/angular2-now
+packages/angular-meteor-babel

@@ -1,0 +1,9 @@
+div(style="margin-bottom:10px")
+    h1 To Do
+
+    div(style="padding:5px", ng-repeat="item in vm.items")
+        input(type="checkbox", ng-model="item.completed")
+        |  {{ item.text }}
+        a.glyphicon.glyphicon-remove(ng-click="vm.removeItem(item)")
+
+    button.btn.btn-xs.btn-warning(ng-if="vm.items.length > 1", ng-click="vm.completeAll()") Complete All

@@ -1,0 +1,6 @@
+form.form-inline(ng-submit="vm.addItem()")
+    .form-group
+        label(for="description") New Item
+        input#description.form-control(type="text", ng-model="vm.input")
+
+    button.btn.btn-primary(type="submit") Add Item
