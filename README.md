@@ -9,6 +9,8 @@ Having read [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/2015
 
 Well, let's see..
 
+## The App itself
+
 ### app.js
 
 <table>
@@ -44,6 +46,16 @@ export class TodoApp {}
     </td>
   </tr>
 </table>
+
+### app.html
+```html
+<div>  
+    <todo-list></todo-list>
+    <new-item></new-item>
+</div>
+```
+
+## todo-list
 
 ### todo-list.js
 
