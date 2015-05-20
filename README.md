@@ -10,11 +10,11 @@ Having read [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/2015
 
 *Note:* For comparison, I have copied the Aurelia code samples from the abovementioned blog. 
 
-Well, let's see...
+So, this is not an extensive review with commentary, etc. Just side by side code and HTML. Let's have a look.
 
 ## The App itself
 
-Aurelia obviously wins here with much shorter code.
+Aurelia obviously wins here, with much shorter code.
 
 #### app.js
 
@@ -254,4 +254,4 @@ So, Angular2-now wins this one, again.
 </template> 
 ```
 
-In summary, you can write nice short code if you use the [Angular2-now](https://github.com/pbastowski/angular2-now) library with your Angular 1 projects.
+In summary, you can write nice short code if you use the [Angular2-now](https://github.com/pbastowski/angular2-now) library with your [angular-meteor](http://angular-meteor.com/) projects.
