@@ -98,6 +98,18 @@ export class TodoList {
   </tr>
 </table>
 
+### todo-list.html
+
+```html
+<div style="margin-bottom:10px">
+  <h1>To Do</h1>
+  <div style="padding:5px" ng-repeat="item in vm.items">
+    <input type="checkbox" ng-model="item.completed"/> {{ item.text }}<a ng-click="vm.removeItem(item)" class="glyphicon glyphicon-remove"></a>
+  </div>
+  <button ng-if="vm.items.length > 1" ng-click="vm.completeAll()" class="btn btn-xs btn-warning">Complete All</button>
+</div>
+```
+
 ### new-item.js
 
 <table>
@@ -157,3 +169,15 @@ export class NewItem {
     </td>
   </tr>
 </table>
+
+### new-item.html
+
+```html
+<form ng-submit="vm.addItem()" class="form-inline">
+  <div class="form-group">
+    <label for="description">New Item</label>
+    <input id="description" type="text" ng-model="vm.input" class="form-control"/>
+  </div>
+  <button type="submit" class="btn btn-primary">Add Item</button>
+</form>
+```
