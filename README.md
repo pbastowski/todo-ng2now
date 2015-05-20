@@ -98,3 +98,62 @@ export class TodoList {
   </tr>
 </table>
 
+### new-item.js
+
+<table>
+<thead>
+  <tr>
+    <th>
+      angular2-now<br>
+    </th>
+    <th>
+      Aurelia<br>
+    </th>
+  </tr>
+</thead>
+  <tr>
+    <td>
+<pre>
+@Component({ selector: 'new-item', injectables: ['todoItems'] })
+@View({ templateUrl: 'client/components/new-item.html' })
+
+class NewItem {
+	constructor(todoItemList) {
+        this.items = todoItemList
+	}
+	addItem() {
+		this.items.push({
+			text: this.input,
+			completed: false
+		})
+		this.input = '';
+	}
+}
+</pre>
+    </td>
+    <td>
+<pre>
+import {TodoItems} from 'services/todo-items';
+
+export class NewItem {  
+  static inject = [TodoItems];
+  constructor(todoitems) {
+    this.items = todoitems.items;
+  }
+  keyPressed($event) {
+    if($event.which === 13) {
+      this.addItem(this.value);
+    }
+  }
+  addItem(input) {
+    this.items.push({
+      text: this.value,
+      completed: false
+    })
+    this.value = '';
+  }
+}
+</pre>
+    </td>
+  </tr>
+</table>
