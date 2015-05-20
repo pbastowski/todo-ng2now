@@ -11,6 +11,8 @@ Well, let's see..
 
 ## The App itself
 
+Aurelia obviously wins here.
+
 #### app.js
 
 <table>
@@ -47,12 +49,22 @@ export class TodoApp {}
   </tr>
 </table>
 
-#### app.html
+#### angular2-now - app.html
 ```html
 <div>  
     <todo-list></todo-list>
     <new-item></new-item>
 </div>
+```
+#### Aurelia - app.html
+```html
+<template>  
+  <require from="./todo-list"></require>
+  <require from="./new-item"></require>
+
+  <todo-list></todo-list>
+  <new-item></new-item>
+</template>
 ```
 
 ## todo-list
@@ -110,7 +122,7 @@ export class TodoList {
   </tr>
 </table>
 
-#### todo-list.html
+#### angular2-now - todo-list.html
 
 ```html
 <div style="margin-bottom:10px">
@@ -120,6 +132,18 @@ export class TodoList {
   </div>
   <button ng-if="vm.items.length > 1" ng-click="vm.completeAll()" class="btn btn-xs btn-warning">Complete All</button>
 </div>
+```
+
+### Aurelia - todolist.html
+```html
+<template style="margin-bottom:10px">  
+  <h1>To Do</h1>
+<div style="padding:5px" repeat.for="item of items">  
+      <input type="checkbox" checked.bind="item.completed" />
+      ${item.text} <a class="glyphicon glyphicon-remove" click.trigger="$parent.removeItem(item)"></a>
+  </div>
+  <button if.bind="items.length" class="btn btn-xs btn-warning" click.trigger="completeAll()">Complete All</button>
+</template>  
 ```
 
 ## new-item
