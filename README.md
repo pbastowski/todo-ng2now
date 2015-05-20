@@ -7,6 +7,8 @@ Click here for the [demo](http://todo-ng2now.meteor.com/).
 
 Having read [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/2015/05/20/porting-an-angular-2-0-app-to-aurelia/) had inspired me to do a side by side comparison of **angular2-now** and **Aurelia**. I wanted to see just how much more code I would be forced to write with AngularJS 1.3 and angular2-now. 
 
+*Note:* For comparison, I have copied the Aurelia code samples from the abovementioned blog. 
+
 Well, let's see..
 
 ## The App itself
@@ -159,6 +161,8 @@ Both are about the same length here.
 
 ## New-Item
 
+Angular2-now version is shorter here. I optimised the HTML for Angular 1.3, which makes two way binding a bit easier than the Angular 2 version.
+
 #### new-item.js
 
 <table>
@@ -219,7 +223,11 @@ export class NewItem {
   </tr>
 </table>
 
-#### new-item.html
+## new-item.html
+
+So, Angular2-now wins this one, again.
+
+#### Angular2-now
 
 ```html
 <form ng-submit="vm.addItem()" class="form-inline">
@@ -230,3 +238,19 @@ export class NewItem {
   <button type="submit" class="btn btn-primary">Add Item</button>
 </form>
 ```
+
+#### Aurelia
+
+```html
+<template>  
+  <div class="form-inline">
+    <div class="form-group">
+      <label for="description">New Item</label>
+      <input id="description" class="form-control" value.bind="value" keyup.trigger="keyPressed($event)">
+    </div>
+    <button class="btn btn-primary" type="button" click.trigger="addItem()">Add Item</button>
+  </div>
+</template> 
+```
+
+In summary, you can write nice short code if you use the [Angular2-now](https://github.com/pbastowski/angular2-now) library with your Angular 1 projects.
