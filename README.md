@@ -10,7 +10,7 @@ After readin [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/201
 
 *Notice:* For comparison, I have copied the Aurelia code samples from the abovementioned blog. 
 
-So, this is not an extensive review with commentary, etc. Just side by side code and HTML. Let's have a look.
+So, this is not an extensive review with commentary, etc. Just a side by side code and HTML.
 
 ## The App itself
 
