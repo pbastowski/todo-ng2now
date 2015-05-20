@@ -51,7 +51,7 @@ export class TodoApp {}
 
 ## app.html
 
-Angular2-now wins this round by a little bit.
+Angular2-now wins this round with shorter code.
 
 #### Angular2-now
 ```html
@@ -73,6 +73,8 @@ Angular2-now wins this round by a little bit.
 ```
 
 ## todo-list
+
+Well, these are exactly the same length... Nice.
 
 #### todo-list.js
 
