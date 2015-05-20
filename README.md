@@ -1,5 +1,6 @@
 # todo-ng2now
-ToDo app coded using the angular2-now library and AngularJS 1.3
+
+ToDo app coded using the [Angular2-now](https://github.com/pbastowski/angular2-now) library and with [angular-meteor](http://angular-meteor.com/).
 
 Click here for the [demo](http://todo-ng2now.meteor.com/).
 
@@ -9,7 +10,7 @@ Having read [Porting an Angular 2.0 App to Aurelia](http://blog.durandal.io/2015
 
 *Note:* For comparison, I have copied the Aurelia code samples from the abovementioned blog. 
 
-Well, let's see..
+Well, let's see...
 
 ## The App itself
 
