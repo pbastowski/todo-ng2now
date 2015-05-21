@@ -14,8 +14,6 @@ So, this is not an extensive review with commentary, etc. Just a side by side co
 
 ## The App itself
 
-Aurelia obviously wins here, with much shorter code.
-
 #### app.js
 
 <table>
@@ -54,8 +52,6 @@ export class TodoApp {}
 
 ## app.html
 
-Angular2-now wins this round with shorter code.
-
 #### Angular2-now
 ```html
 <div>  
@@ -76,8 +72,6 @@ Angular2-now wins this round with shorter code.
 ```
 
 ## todo-list
-
-Well, these are exactly the same length... Nice.
 
 #### todo-list.js
 
@@ -133,8 +127,6 @@ export class TodoList {
 </table>
 
 ## todo-list.html
-
-Both are about the same length here.
 
 #### Angular2-now
 
@@ -225,8 +217,6 @@ export class NewItem {
 </table>
 
 ## new-item.html
-
-So, Angular2-now wins this one, again.
 
 #### Angular2-now
 
